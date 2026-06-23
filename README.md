@@ -1,135 +1,81 @@
-# E-Commerce Database Design
+# Car Rental Database System
 
 ## Overview
 
-This project presents a complete database design for a real-world E-Commerce system.
-
-The design includes:
-
-- Requirements Analysis
-- Entity Relationship Design (ERD)
-- Database Normalization (up to 3NF)
-- PostgreSQL Schema Implementation
-- Sample Data Population
-- Performance Optimization with Indexes
-- Business Reporting Queries
-
-The database is designed to support a scalable and maintainable online shopping platform.
-
----
+This project demonstrates the design and implementation of a relational database for a car rental company. The database is designed to manage customers, vehicles, rentals, payments, and related operations efficiently using SQL.
 
 ## Features
 
-### User Management
-- User Registration and Login
-- Role Management (Customer / Admin)
-- Multiple Delivery Addresses
+* Customer management
+* Vehicle management
+* Rental transaction tracking
+* Database schema design
+* Sample data population
+* SQL queries for data retrieval and analysis
+* Advanced SQL operations
 
-### Product Management
-- Product Categories and Subcategories
-- Product Images
-- Inventory Tracking
-- SKU Management
+## Project Structure
 
-### Shopping Experience
-- Shopping Cart
-- Wishlist
-- Product Reviews and Ratings
+```text
+car_rental_schema.sql     # Database tables and relationships
+car_rental_data.sql       # Sample data records
+car_rental_queries.sql    # Common SQL queries
+car_rental_advanced.sql   # Advanced SQL operations
+```
 
-### Order Processing
-- Order Creation
-- Order Items
-- Payment Tracking
-- Shipment Tracking
+## Database Modules
 
-### Administration
-- User Management
-- Product Management
-- Order Management
-- Permission-Based Access Control
+### Customers
 
----
+Stores customer information such as:
 
-## Database Entities
+* Customer ID
+* Name
+* Contact Information
+* Driver License Details
 
-- Users
-- Roles
-- Categories
-- Products
-- ProductImages
-- Inventory
-- ShoppingCart
-- Orders
-- OrderItems
-- Payments
-- Reviews
-- Wishlist
-- DeliveryAddresses
-- OrderShipment
-- Admins
+### Vehicles
 
----
+Stores vehicle information such as:
 
-## Normalization
+* Vehicle ID
+* Model
+* Brand
+* Category
+* Availability Status
 
-The database design follows:
+### Rentals
 
-- First Normal Form (1NF)
-- Second Normal Form (2NF)
-- Third Normal Form (3NF)
+Manages rental transactions including:
 
-This minimizes redundancy and improves data consistency.
+* Rental Date
+* Return Date
+* Customer Information
+* Vehicle Information
 
----
+### Payments
+
+Tracks payment details related to rental transactions.
 
 ## Technologies Used
 
-- PostgreSQL
-- SQL
-- PlantUML
-- Database Modeling
-- ERD Design
-
----
-
-## Performance Optimization
-
-- Indexed frequently searched columns
-- Foreign Key Constraints
-- Unique Constraints
-- Check Constraints
-- ACID-Compliant Design
-
----
-
-## Sample Queries
-
-The project includes practical SQL queries such as:
-
-- User Order History
-- Revenue Analysis
-- Best Selling Products
-- Inventory Monitoring
-- Wishlist Tracking
-- Shipment Tracking
-- Product Ratings Analysis
-
----
+* SQL
+* Relational Database Design
+* ER Modeling
+* Database Normalization
 
 ## Learning Outcomes
 
-Through this project:
+Through this project, the following database concepts were applied:
 
-- Designed a production-ready relational database.
-- Applied normalization techniques up to 3NF.
-- Implemented complex relationships.
-- Optimized query performance using indexes.
-- Created analytical SQL reports.
-
----
+* Entity Relationship Modeling (ERD)
+* Primary and Foreign Keys
+* Table Relationships
+* Database Normalization
+* SQL Query Development
+* Data Management and Analysis
 
 ## Author
 
-Mohammed
-
-Computer Science Student
+Mohammed Faya
+Software Engineering Student
